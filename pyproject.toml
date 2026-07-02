@@ -1,0 +1,4 @@
+[tool.vercel.scripts]
+build = "python build.py"
+[project]
+version = "3.14"
