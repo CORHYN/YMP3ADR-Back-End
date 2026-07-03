@@ -23,6 +23,7 @@ async def download_youtube_video(data: Annotated[FormData, Form()]):
 
     ydl_opts = {
         "format": "bestaudio/best",
+        "cookiesfrombrowser": ('firefox',),
         "postprocessors": [
             {
                 "key": "FFmpegExtractAudio",
